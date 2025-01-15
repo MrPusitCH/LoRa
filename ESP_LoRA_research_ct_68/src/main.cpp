@@ -98,7 +98,7 @@ void setup() {
    while (!Serial) delay(10);
 
   // เริ่มใช้งาน Task Watchdog Timer
-  esp_task_wdt_init(600000, true);  // ตั้งเวลา WDT ที่ 5 วินาที (true = รีเซ็ต MCU เมื่อ WDT timeout)
+  esp_task_wdt_init(600000, true);  // ตั้งเวลา WDT ที่ 10 นาที (true = รีเซ็ต MCU เมื่อ WDT timeout)
   esp_task_wdt_add(NULL);      // เพิ่ม Task หลัก (Main Loop) ให้ WDT เฝ้าระวัง
 
 
